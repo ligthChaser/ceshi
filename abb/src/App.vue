@@ -15,6 +15,7 @@ export default {
   },
   created() {
     console.log(8888888888888);
+    console.log(1111);
   },
 };
 </script>
