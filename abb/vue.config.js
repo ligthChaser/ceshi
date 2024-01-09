@@ -9,9 +9,10 @@ module.exports = defineConfig({
   chainWebpack: config => {
     // 在这里配置 Webpack Loader
     config.module
-    .rule('js')
-    .test(/\.(js|ts|jsx|tsx|vue)$/)
-    .use(['delete-others-log-loader']);
-
+      .rule('delete-others-log-loader')
+      .test(/\.(js|ts|jsx|tsx|vue)$/)
+      .use('delete-others-log-loader')
+      .loader('delete-others-log-loader')
+      .end()
   }
 })
