@@ -14,7 +14,7 @@ export default {
     HelloWorld,
   },
   created() {
-    console.log(8888888888888);
+    console.log(dssdsd88888888);
     console.log(1111);
   },
 };
